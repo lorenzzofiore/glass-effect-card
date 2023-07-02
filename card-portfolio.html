@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card by lorenzzofiore</title>
+</head>
+
+<!-- Styles -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #222222;
+        font-family: 'Poppins', sans-serif;
+        font-family: 'Saira', sans-serif;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: auto;
+        height: 100vh;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .row {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    .card {
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.01);
+        border-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6px);
+        -webkit-backdrop-filter: blur(6px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        width: 450px;
+        position: relative;
+        transition: all 600ms ease-in;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+        filter: drop-shadow(0 0 1em #646cffaa);
+        cursor: pointer;
+    }
+
+    .card-head {
+        position: relative;
+        width: 100%;
+        height: 200px;
+    }
+
+    .card-head img {
+        width: 400px;
+        position: absolute;
+        top: -60px;
+        left: 6%;
+    }
+
+    .card-content h3 {
+        color: #fff;
+        font-size: 2rem;
+        text-align: center;
+        padding-top: 10px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .card-content p {
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        padding: 16px 16px;
+        font-family: 'Saira', sans-serif;
+    }
+
+    .card-footer {
+        padding: 16px 0px;
+        margin-bottom: 20px;
+    }
+
+    .card-footer a {
+        border: 3px solid #fff;
+        border-radius: 50em;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        transition: all 1s ease;
+    }
+
+    .card-footer a:hover {
+        background: linear-gradient(319deg, rgba(153,254,255,1) 0%, rgba(187,153,237,1) 100%)!important;
+        font-weight: 600!important;
+        color: #ffffff!important;
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 1.6em #646cffaa);
+    }
+
+    @media (max-width: 992px) {
+        .card {
+            width: 350px;
+        }
+
+        .card-head {
+            height: 150px;
+        }
+
+        .card-head img {
+            width: 300px;
+            top: -40px;
+        }
+    }
+
+</style>
+
+<!-- Content -->
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <article class="card">
+                <header class="card-head">
+                    <img src="/img/web-develop-lorenzzofiore.png" alt="mockup web lorenzzofiore">
+                </header>
+                <main class="card-content">
+                    <h3>Personal Portfolio</h3>
+                    <p>My personal Web Portfolio design and develop by me.</p>
+                </main>
+                <footer class="card-footer">
+                    <a href="https://github.com/lorenzzofiore/portfolio-react-lorenzzo">Visit Web</a>
+                </footer>
+            </article>
+        </div>
+    </div>
+
+
+</body>
+</html>
